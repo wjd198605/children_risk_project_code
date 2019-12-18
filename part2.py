@@ -1,8 +1,10 @@
-#Part 2
-#One hot encoding the features and lable
+#Part 2 One hot encoding the features and lable
+#Import tools
 from keras.utils import to_categorical
 from sklearn import preprocessing
-num_classes =2 # Two class classification
+
+# Two class classification
+num_classes =2 
 
 #One hot encoding features
 enc = preprocessing.OneHotEncoder()
