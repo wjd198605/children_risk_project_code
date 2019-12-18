@@ -1,11 +1,12 @@
-# Part 1
-# Use pandas to read data and extract features and label
+# Part 1. Use pandas to read data and extract features and label. Then over_sampling and split to train and test.
+
+#Import pandas and read data
 import pandas as pd 
 data = pd.read_csv('dataPlus.csv')
 feature = data1.drop(['diag_ebd'],axis =1)
 label = data1['diag_ebd']
 
-# Use the SMOTE to over sampling the data ratio to 1:1
+#Import and use the SMOTE to over sampling the data ratio to 1:1
 from imblearn.over_sampling import SMOTE
 import numpy as np
 sm = SMOTE(random_state =12, ratio =1.0)
