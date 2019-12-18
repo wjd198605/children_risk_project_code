@@ -18,6 +18,6 @@ feature_over_sampling= np.round(feature_over_sampling)
 from sklearn.model_selection import train_test_split
 x_train_original, x_test_original, y_train_original, y_test_original= train_test_split(feature_over_sampling[0:2459], feature_over_sampling[0:2459], test_size =0.25, random_state =12)
 x_train_oversampling, x_test_oversampling, y_train_oversampling, y_test_oversampling= train_test_split(feature_over_sampling[2459:], feature_over_sampling[2459:], test_size =0.25, random_state =12)
-# Concatenate original and oversampling data, sample 1 and sample 3 in the article
+# Concatenate sample 1 and sample 3 
 x_train = np.concatenate((x_train_original, x_train_oversampling))
 y_train = np.concatenate((y_train_original, y_train_oversampling))
