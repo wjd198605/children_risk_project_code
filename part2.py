@@ -28,7 +28,7 @@ gnb = GaussianNB()
 lr = LogisticRegression()
 #Buld Deep Neural Network
 dnn = Sequential()
-dnn.add(Dense(32, activation='relu', input_dim=121)) # input_dim is the input shape corresponding to the dataset
+dnn.add(Dense(32, activation='relu', input_dim=123)) # input_dim is the input shape corresponding to the dataset
 dnn.add(Dense(16,activation='relu'))
 dnn.add(Dense(8,activation='relu'))
 dnn.add(Dense(num_classes, activation='sigmoid'))
